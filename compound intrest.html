@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>compound intrest</title>
+        
+    <script>
+          var p,t,r,ci;
+        function myname()
+        {
+      
+          p=document.getElementById("a").value;
+          t=document.getElementById("b").value;
+          r=document.getElementById("c").value;
+          amount=p*Math.pow((1+r/100),t);
+          ci=amount-p;
+          document.getElementById("num").value=ci;
+
+        }
+
+    </script>
+    </head>
+    <body>
+        <h1>compound intrest</h1>
+        <table border="2">
+        <tr>
+            <td>principal amount</td><td><input type="text" id="a" placeholder="principal"</td>
+        </tr>
+        <tr>
+            <td>time</td><td><input type="text" id="b" placeholder="time period"</td>
+        </tr>
+        <tr>
+            <td>Rate</td><td><input type="text" id="c" placeholder="intrest"</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><button onclick="myname();">calculate</button></td>
+        </tr>
+        </table>
+        <div>compound intrest <input type="text" id="num"></div>
+    </body>
+
+
+</html>

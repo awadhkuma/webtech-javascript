@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titl>revision</titl>
+    </head>
+    <body>
+        <h1>enter your personal data</h1>
+        <form>
+            <label>name</label>
+            <input type="text" placeholder="username">
+            <br><br>
+            <label>password</label>
+            <input type="password" placeholder="password" id="ap">
+            <br><br>
+            <label> con password</label>
+            <input type="password" placeholder="password" id="ak">
+            <br><br>
+            <labe>email</labe>
+            <input type="email" placeholder="email">
+            <br><br>
+            <label>gender:</label>
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label>female</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+            <br><br>
+            <input type="submit" value="submit" onclick="check()">
+        </form>
+        <script>
+            function check(){
+            var a=document.getElementById("ap").value;
+            var b=document.getElementById("ak").value;
+            if(a==b){
+                alert("correct password")
+            }
+            else{
+                document.getElementById("dem").innerHTML="password not match";
+            }
+        }
+        </script>
+        <P id="dem" style="color:red;"></p>
+    </body>
+</html>

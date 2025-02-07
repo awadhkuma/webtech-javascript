@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+
+</script>
+<style>
+    *{
+        font-family: "Dancing Script", cursive;
+    }
+</style>
+</head>
+<body>
+<div ng-app="">
+<p>input soetime in the input box:</p>
+<p>name:<input type="text" ng-model="name" placeholder="enter here"></p>
+<p>phone number:<input type="number" ng-model="phonenumber" placeholder="enter here"></p>
+<h1>hello {{name}}</h1>
+<h1>tel {{phonenumber}}</h1>
+<h1>sum 2+2={{2*2}}</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<style>
+    .main{
+        background-color: aqua;
+        height: 50 vh;
+        width: 50vw;
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    .first{
+        padding: 5px;
+        display: block;
+    }
+    h1{
+        text-align: center;
+    }
+    
+    #name{
+        width: 90%;
+        margin-left: 15px;
+    }
+    #ap{
+        width: 84%;
+    }
+    .btn{
+        margin-left: 40%;
+        font-size: 18px;
+        padding: 5px;
+    }
+</style>
+<body>
+<div class="main">
+<h1><u>job application form</u></h1>
+<form>
+    <div class="first">
+    <label>first name:</label>
+    <input type="text" required autofocus id="name">
+    </div>
+
+    <div class="first">
+    <label>middle name:</label>
+    <input type="text" required autofocus id="name">
+    </div>
+    <div class="first">
+    <label>last name:</label>
+    <input type="text" required autofocus id="name">
+    </div>
+
+    <div class="first">
+
+    <label for="gender">gender:</label>
+    <label>male</label>
+    <input type="radio" name="gender"value="male">
+    <label>female</label>
+    <input type="radio" name="gender"value="female">
+    <label>other</label>
+    <input type="radio" name="gender"value="female">
+    </div>
+
+    <div class="first">
+
+    <label>Address</label>
+    <textarea name="Address" rows="3" required id="ap"></textarea>
+    </div>
+
+    <div class="first">
+    <label>phone number:</label>
+    <input type="text" required autofocus id="name">
+    </div>
+
+    <button class="btn">submit</button>
+
+</div>
+</form>
+</body>
+</html>

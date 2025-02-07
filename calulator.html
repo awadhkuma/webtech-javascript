@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet"> -->
+<style>
+    
+    *{
+        font-family: "Dancing Script", cursive;
+    }
+</style>
+</head>
+<body>
+    <h1>calculator</h1>
+    <div data-ng-app=""  data-ng-init="number1=1; number2=1;">
+        <input type="number" ng-model="number1"><br><br>
+        <input type="number" ng-model="number2"><br><br>
+        <h4 >sum: {{number1+number2}}</h4>
+        <h4>mul: {{number1*number2}}</h4>
+    </div>
+    
+</body>
